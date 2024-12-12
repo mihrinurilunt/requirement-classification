@@ -21,7 +21,7 @@ def train_naive_bayes(X, y):
     model.fit(X_train, y_train)
 
     # Predict on the test set
-
+    y_pred = model.predict(X_test)
 
     # Evaluate the model
     print("Accuracy:", accuracy_score(y_test, y_pred))
